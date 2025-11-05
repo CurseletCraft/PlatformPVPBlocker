@@ -1,0 +1,18 @@
+# paper-plugin.yml
+
+name: PlatformPVPBlocker
+version: '1.0'
+main: mino.dx.curseletcraft.PlatformPVPBlocker
+api-version: '1.21'
+authors: [ MinoMC_YTB ]
+description: Thêm chức năng chặn PVP cho 2 player nền tảng khác nhau (Java VS Bedrock)
+website: https://www.youtube.com/channel/UCuiahZeaj3jpkkX93aGmLMw
+dependencies:
+  server:
+    floodgate:
+      load: BEFORE
+      required: true
+      join-classpath: true
+
+
+# end of paper-plugin.yml

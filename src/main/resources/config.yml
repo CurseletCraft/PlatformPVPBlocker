@@ -1,0 +1,21 @@
+# config.yml
+
+# Bật quyền bypass chặn pvp cho 2 nền tảng khác nhau
+# Permissions:
+# - *
+# - platformpvp.bypass
+enable-bypass-permission: true
+
+# Quản lý chức năng gửi tin nhắn khi có pvp khác nền tảng
+# Lưu ý: Format chỉ hỗ trợ Component của Adventure API bằng MiniMessage.
+# Có thể tạo MiniMessage ở đây: https://webui.advntr.dev/
+message:
+  enable: true
+  enable-sound: true
+  format: "<red>Bạn không thể PvP với người chơi ở nền tảng khác!</red>"
+  cooldown: -1 # set -1 hoặc 0 để tắt cooldown
+
+# Bật reload command (yêu cầu quyền platformpvp.admin)
+enable-reload-command: true
+
+# end of config.yml
