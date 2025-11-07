@@ -13,6 +13,6 @@ dependencies:
       load: BEFORE
       required: true
       join-classpath: true
-
+folia-supported: true
 
 # end of paper-plugin.yml
