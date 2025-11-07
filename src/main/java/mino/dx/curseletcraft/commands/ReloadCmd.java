@@ -1,7 +1,9 @@
-package mino.dx.curseletcraft;
+package mino.dx.curseletcraft.commands;
 
 import com.mojang.brigadier.builder.LiteralArgumentBuilder;
 import io.papermc.paper.command.brigadier.CommandSourceStack;
+import mino.dx.curseletcraft.PlatformPVPBlocker;
+import mino.dx.curseletcraft.config.Config;
 import net.kyori.adventure.text.minimessage.MiniMessage;
 
 import static io.papermc.paper.command.brigadier.Commands.literal;
@@ -13,7 +15,7 @@ public class ReloadCmd {
                 .requires(src -> src.getSender().hasPermission("platformpvp.admin"))
                 .then(literal("reload")
                         .executes(ctx -> {
-                            plugin.reloadConfigAndSettings();
+                            Config.reload();
                             ctx.getSource().getSender().sendMessage(
                                     MiniMessage.miniMessage().deserialize("<green>✅ Config reloaded successfully!")
                             );
